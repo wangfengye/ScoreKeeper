@@ -13,107 +13,108 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/football_match"
-        android:textStyle="bold"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
+
     <TextView
         android:id="@+id/a"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginRight="32dp"
         android:layout_marginTop="8dp"
         android:text="@string/team_red"
-        android:textSize="20sp"
         android:textColor="@android:color/holo_red_light"
-        app:layout_constraintTop_toBottomOf="@+id/title"
+        android:textSize="20sp"
         app:layout_constraintRight_toLeftOf="@+id/title"
-        android:layout_marginRight="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/title"
         />
 
     <TextView
         android:id="@+id/b"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
         android:text="@string/team_black"
         android:textColor="@android:color/black"
         android:textSize="20sp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/title"
         app:layout_constraintLeft_toRightOf="@+id/title"
-        android:layout_marginLeft="32dp"/>
+        app:layout_constraintTop_toBottomOf="@+id/title"/>
 
     <TextView
         android:id="@+id/a_score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="00"
+        android:layout_marginRight="-13dp"
+        android:layout_marginTop="8dp"
         android:textColor="@android:color/holo_red_light"
         android:textSize="56sp"
-        android:layout_marginRight="-13dp"
         app:layout_constraintRight_toRightOf="@+id/a"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/a"/>
+        app:layout_constraintTop_toBottomOf="@+id/a"
+        tools:text="00"/>
 
     <TextView
         android:id="@+id/b_score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="00"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="8dp"
         android:textColor="@android:color/black"
         android:textSize="56sp"
-        android:layout_marginLeft="0dp"
         app:layout_constraintLeft_toLeftOf="@+id/b"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/b"/>
+        app:layout_constraintTop_toBottomOf="@+id/b"
+        tools:text="00"/>
 
     <TextView
         android:id="@+id/a_error"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="00"
-        android:layout_marginTop="32dp"
-        app:layout_constraintTop_toBottomOf="@+id/a_score"
         android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="@+id/a_score"/>
+        android:layout_marginTop="32dp"
+        app:layout_constraintRight_toRightOf="@+id/a_score"
+        app:layout_constraintTop_toBottomOf="@+id/a_score"
+        tools:text="00"/>
 
     <TextView
         android:id="@+id/b_error"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="00"
-        android:layout_marginTop="32dp"
-        app:layout_constraintTop_toBottomOf="@+id/b_score"
         android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="@+id/b_score"/>
+        android:layout_marginTop="32dp"
+        android:text="00"
+        app:layout_constraintLeft_toLeftOf="@+id/b_score"
+        app:layout_constraintTop_toBottomOf="@+id/b_score"/>
 
     <Button
         android:id="@+id/a_add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/add"
         android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/a_reduce"
         android:layout_marginRight="-8dp"
+        android:text="@string/add"
+        app:layout_constraintBottom_toTopOf="@+id/a_reduce"
         app:layout_constraintRight_toRightOf="@+id/a_reduce"/>
 
     <Button
         android:id="@+id/a_reduce"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/add"
         android:layout_marginBottom="16dp"
+        android:layout_marginRight="32dp"
+        android:text="@string/add"
         app:layout_constraintBottom_toTopOf="@+id/clear"
-        app:layout_constraintRight_toLeftOf="@+id/clear"
-        android:layout_marginRight="32dp"/>
+        app:layout_constraintRight_toLeftOf="@+id/clear"/>
 
     <Button
         android:id="@+id/b_reduce"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
         android:layout_marginLeft="32dp"
         android:text="@string/reduce"
-        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toTopOf="@+id/clear"
         app:layout_constraintLeft_toRightOf="@+id/clear"/>
 
@@ -121,21 +122,21 @@
         android:id="@+id/b_add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/reduce"
         android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/b_reduce"
         android:layout_marginLeft="0dp"
+        android:text="@string/reduce"
+        app:layout_constraintBottom_toTopOf="@+id/b_reduce"
         app:layout_constraintLeft_toLeftOf="@+id/b_reduce"/>
 
     <Button
         android:id="@+id/clear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
         android:text="@string/clear"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="32dp"/>
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
 
     <TextView
         android:id="@+id/score_title"
@@ -143,9 +144,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="29dp"
         android:text="@string/score_title"
-        app:layout_constraintTop_toTopOf="@+id/a_score"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/a_score"/>
 
     <TextView
         android:id="@+id/error_title"
@@ -153,9 +154,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="-9dp"
         android:text="@string/error_title"
-        app:layout_constraintTop_toTopOf="@+id/a_error"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/a_error"/>
 
 
 </android.support.constraint.ConstraintLayout>

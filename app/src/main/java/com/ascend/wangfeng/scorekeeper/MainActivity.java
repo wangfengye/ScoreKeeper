@@ -78,10 +78,10 @@ public class MainActivity extends AppCompatActivity {
         setText(mBScore, ZERO);
         setText(mAError, ZERO);
         setText(mBError, ZERO);
-        mAScoreCount = 0;
-        mBScoreCount = 0;
-        mAErrorCount = 0;
-        mBErrorCount = 0;
+        mAScoreCount = ZERO;
+        mBScoreCount = ZERO;
+        mAErrorCount = ZERO;
+        mBErrorCount = ZERO;
     }
 
     private void findView() {
