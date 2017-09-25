@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ScoreKeeper</string>
+    <string name="football_match">足球赛 </string>
+    <string name="team_red">红队</string>
+    <string name="team_black">黑队</string>
+    <string name="add">得分</string>
+    <string name="reduce">犯规</string>
+    <string name="clear">重置</string>
+    <string name="error_title">犯规</string>
+    <string name="score_title">得分</string>
+</resources>
